@@ -2,7 +2,7 @@ import React from 'react'
 
 const ScrollX = () => {
     return (
-        <div className='scrollX gap-4 text-neutral-300 font-semibold'>
+        <div className='scrollX gap-4 text-neutral-300 font-semibold select-none'>
             <div className="item" id="item1">REACT</div>
             <div className="item" id="item2">TAILWINDCSS</div>
             <div className="item" id="item3">JAVASCRIPT</div>
