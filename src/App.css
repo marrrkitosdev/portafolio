@@ -95,7 +95,7 @@
         transform: rotateY(180deg);
     }
     50% {
-        margin-left: 90%;
+        margin-left: 85%;
         transform: rotateY(360deg)
     }
     95%{
