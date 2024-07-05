@@ -81,28 +81,136 @@
     animation-delay: calc(20s / 8 * (8 - 8) * -1);
 }
 
-.allayGif {
-    animation: volar 12s linear infinite;
-}
-
 @keyframes volar {
     0% {
-        margin-left: 0%;
+        margin-left: -40%;
         transform: rotateY(180deg);
-    }
-
-    45% {
+        scale: 0.5;
+        opacity: 0;
+    }11%{
+        opacity: 0;
+        scale: 0.5;
+    }13%{
+        scale: 1;
+        opacity: 1;
+    }37%{
+        opacity: 1;
+        scale: 1;
+    }39%{
+        opacity: 0;
+        scale: 0.5;
+    }45% {
         transform: rotateY(180deg);
-    }
-    50% {
-        margin-left: 85%;
-        transform: rotateY(360deg)
-    }
-    95%{
+    }50% {
+        margin-left: 120%;
         transform: rotateY(360deg);
-    }
-    100% {
-        margin-left: 0%;
+    }60%{
+        opacity: 0;
+        scale: 0.5;
+    }62%{
+        opacity: 1;
+        scale: 1;
+    }86%{
+        scale: 1;
+        opacity: 1;
+    }88%{
+        scale: 0.5;
+        opacity: 0;
+    }95%{
+        transform: rotateY(360deg);
+    }100% {
+        margin-left: -40%;
         transform: rotateY(180deg);
+        opacity: 0;
     }
+}
+@keyframes volar2 {
+    0% {
+        margin-left: -40%;
+        transform: rotateY(180deg);
+        scale: 0.5;
+        opacity: 0;
+    }11%{
+        opacity: 0;
+        scale: 0.5;
+    }13%{
+        opacity: 1;
+        scale: 1;
+    }38%{
+        opacity: 1;
+        scale: 1;
+    }40%{
+        opacity: 0;
+        scale: 0.5;
+    }45% {
+        transform: rotateY(180deg);
+    }50% {
+        margin-left: 120%;
+        transform: rotateY(360deg);
+    }59%{
+        opacity: 0;
+        scale: 0.5;
+    }61%{
+        opacity: 1;
+        scale: 1;
+    }86%{
+        scale: 1;
+        opacity: 1;
+    }88%{
+        scale: 0.5;
+        opacity: 0;
+    }95%{
+        transform: rotateY(360deg);
+    }100% {
+        margin-left: -40%;
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+}
+@keyframes volar3 {
+    0% {
+        margin-left: -40%;
+        transform: rotateY(180deg);
+        scale: 0.5;
+        opacity: 0;
+    }11%{
+        opacity: 0;
+        scale: 0.5;
+    }13%{
+        opacity: 1;
+        scale: 1;
+    }35%{
+        opacity: 1;
+        scale: 1;
+    }37%{
+        opacity: 0;
+        scale: 0.5;
+    }45% {
+        transform: rotateY(180deg);
+    }50% {
+        margin-left: 120%;
+        transform: rotateY(360deg);
+    }62%{
+        opacity: 0;
+        scale: 0.5;
+    }64%{
+        opacity: 1;
+        scale: 1;
+    }86%{
+        scale: 1;
+        opacity: 1;
+    }88%{
+        scale: 0.5;
+        opacity: 0;
+    }95%{
+        transform: rotateY(360deg);
+    }100% {
+        margin-left: -40%;
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+#invertirPortal {
+    transform: rotateY(180deg);
 }
