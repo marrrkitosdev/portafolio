@@ -80,3 +80,29 @@
 #item8 {
     animation-delay: calc(20s / 8 * (8 - 8) * -1);
 }
+
+.allayGif {
+    animation: volar 12s linear infinite;
+}
+
+@keyframes volar {
+    0% {
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+
+    45% {
+        transform: rotateY(180deg);
+    }
+    50% {
+        margin-left: 90%;
+        transform: rotateY(360deg)
+    }
+    95%{
+        transform: rotateY(360deg);
+    }
+    100% {
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+}
