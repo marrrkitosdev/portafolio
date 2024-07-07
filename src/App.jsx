@@ -4,6 +4,7 @@ import Header from './components/Header'
 import ScrollX from './components/ScrollX'
 import Proyectos from './components/Proyectos'
 import About from './components/About'
+import Contacto from './components/Contacto'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <ScrollX />
       <About />
       <Proyectos />
+      <Contacto />
     </div>
   )
 }
