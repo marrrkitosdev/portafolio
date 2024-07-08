@@ -17,8 +17,8 @@ const Contacto = () => {
                     <input type='text' placeholder={lang === 'ESP' ? 'Nombre' : 'Name'} name="name" className='contactoInput w-full p-1 rounded-lg text-[#853FBC]' required/>
                     <input type='email' placeholder={lang === 'ESP' ? 'Correo electrónico' : 'Email'} name="email" className='contactoInput w-full p-1 rounded-lg text-[#853FBC]' required/>
                     <div className="divRow flex flex-col lg:flex-row justify-between gap-2">
-                        <textarea placeholder={lang === 'ESP' ? 'Mensaje' : 'Message'} name="msg" className='contactoInput p-1 rounded-lg lg:w-5/6 text-[#853FBC]' required></textarea>
-                        <button type='submit' className='contactoButton p-4 text-yellow-400 bg-neutral-200 bg-opacity-20 rounded-lg font-bold' formTarget='_blank'>
+                        <textarea placeholder={lang === 'ESP' ? 'Mensaje' : 'Message'} name="msg" className='contactoInput p-1 rounded-lg lg:w-5/6 text-[#853FBC] resize-none' required></textarea>
+                        <button type='submit' className='contactoButton p-4 text-yellow-400 bg-neutral-200 bg-opacity-20 rounded-lg font-bold'>
                             {lang === 'ESP' ? 'Enviar' : 'Send'}
                         </button>
                     </div>
