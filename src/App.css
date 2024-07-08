@@ -215,12 +215,17 @@
     transform: rotateY(180deg);
 }
 .contactoTitle{
-    font-family: "Tiny5", sans-serif;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #000;
 }
 .contactoInput::placeholder{
     color: #853FBC;
-    font-size: large;
+    font-size: 1rem;
     line-height: 40px;
+    font-weight: 600;
+}
+.contactoDiv{
+    animation: aparecer 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }

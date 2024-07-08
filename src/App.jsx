@@ -5,17 +5,22 @@ import ScrollX from './components/ScrollX'
 import Proyectos from './components/Proyectos'
 import About from './components/About'
 import Contacto from './components/Contacto'
+import { LangProvider } from './LangContext'
+import Footer from './components/Footer'
 
 
 const App = () => {
   return (
-    <div id='divBody' className='bg-gradient-to-b from-[#381B4F] via-[#853FBC] to-[#381B4F] min-h-screen min-x-screen'>
-      <Header />
-      <ScrollX />
-      <About />
-      <Proyectos />
-      <Contacto />
-    </div>
+    <LangProvider>
+      <div id='divBody' className='bg-gradient-to-b from-[#381B4F] via-[#853FBC] to-[#381B4F] min-h-screen min-x-screen'>
+        <Header />
+        <ScrollX />
+        <About />
+        <Proyectos />
+        <Contacto />
+        <Footer />
+      </div>
+    </LangProvider>
   )
 }
 
