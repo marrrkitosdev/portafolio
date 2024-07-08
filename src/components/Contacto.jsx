@@ -10,7 +10,7 @@ const Contacto = () => {
                 <h2 className='contactoTitle text-yellow-500 text-2xl'>{lang === 'ESP' ? 'Contacto' : 'Contact'}</h2>
                 <p className='contactoText text-yellow-500 text-lg drop-shadow-[1px_1px_1px_rgba(0,0,0,1)]'>
                     {lang === 'ESP' ? 
-                    'Si deseas contactarme o ver más de mi trabajo, puedes enviar un correo electrónico a marrrkteves.dev@gmail.com o enviar un mensaje a través de este formulario.' :
+                    `Si deseas contactarme o ver más de mi trabajo, puedes enviar un correo electrónico a marrrkteves.dev@gmail.com o enviar un mensaje a través de este formulario.` :
                     'If you want to contact me or see more of my work, you can send an email to marrrkteves.dev@gmail.com or send a message through this form.'}
                 </p>
                 <form className='contactoForm flex flex-col gap-2' action="https://formsubmit.co/8d8b4a9203ae6be0489e8267f7d87233" method="POST">
