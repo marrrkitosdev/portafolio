@@ -2,16 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-#ul-nav {
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+* {
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+}
+
+.fontTitle {
+    font-family: "Tiny5", sans-serif !important;
 }
 
 .card {
     animation: aparecer 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.imgCard {
+    mask: linear-gradient(to bottom, #00000080 5%, #00000010);
+    scale: 0.9;
+    opacity: 0.8;
+    transition: 0.3s all ease-out;
+}
+
+.imgCard:hover {
+    mask: none;
+    scale: 1;
+    opacity: 1;
 }
 
 @keyframes aparecer {
@@ -59,24 +75,31 @@
 #item1 {
     animation-delay: calc(20s / 8 * (8 - 1) * -1);
 }
+
 #item2 {
     animation-delay: calc(20s / 8 * (8 - 2) * -1);
 }
+
 #item3 {
     animation-delay: calc(20s / 8 * (8 - 3) * -1);
 }
+
 #item4 {
     animation-delay: calc(20s / 8 * (8 - 4) * -1);
 }
+
 #item5 {
     animation-delay: calc(20s / 8 * (8 - 5) * -1);
 }
+
 #item6 {
     animation-delay: calc(20s / 8 * (8 - 6) * -1);
 }
+
 #item7 {
     animation-delay: calc(20s / 8 * (8 - 7) * -1);
 }
+
 #item8 {
     animation-delay: calc(20s / 8 * (8 - 8) * -1);
 }
@@ -87,144 +110,91 @@
         transform: rotateY(180deg);
         scale: 0.5;
         opacity: 0;
-    }11%{
+    }
+
+    11% {
         opacity: 0;
         scale: 0.5;
-    }13%{
-        scale: 1;
+    }
+
+    13% {
         opacity: 1;
-    }37%{
+        scale: 1;
+    }
+
+    35% {
         opacity: 1;
         scale: 1;
-    }39%{
+    }
+
+    37% {
         opacity: 0;
         scale: 0.5;
-    }45% {
+    }
+
+    45% {
         transform: rotateY(180deg);
-    }50% {
+    }
+
+    50% {
         margin-left: 120%;
         transform: rotateY(360deg);
-    }60%{
+    }
+
+    62% {
         opacity: 0;
         scale: 0.5;
-    }62%{
+    }
+
+    64% {
         opacity: 1;
         scale: 1;
-    }86%{
+    }
+
+    86% {
         scale: 1;
         opacity: 1;
-    }88%{
+    }
+
+    88% {
         scale: 0.5;
-        opacity: 0;
-    }95%{
-        transform: rotateY(360deg);
-    }100% {
-        margin-left: -40%;
-        transform: rotateY(180deg);
         opacity: 0;
     }
-}
-@keyframes volar2 {
-    0% {
-        margin-left: -40%;
-        transform: rotateY(180deg);
-        scale: 0.5;
-        opacity: 0;
-    }11%{
-        opacity: 0;
-        scale: 0.5;
-    }13%{
-        opacity: 1;
-        scale: 1;
-    }38%{
-        opacity: 1;
-        scale: 1;
-    }40%{
-        opacity: 0;
-        scale: 0.5;
-    }45% {
-        transform: rotateY(180deg);
-    }50% {
-        margin-left: 120%;
+
+    95% {
         transform: rotateY(360deg);
-    }59%{
-        opacity: 0;
-        scale: 0.5;
-    }61%{
-        opacity: 1;
-        scale: 1;
-    }86%{
-        scale: 1;
-        opacity: 1;
-    }88%{
-        scale: 0.5;
-        opacity: 0;
-    }95%{
-        transform: rotateY(360deg);
-    }100% {
-        margin-left: -40%;
-        transform: rotateY(180deg);
-        opacity: 0;
     }
-}
-@keyframes volar3 {
-    0% {
-        margin-left: -40%;
-        transform: rotateY(180deg);
-        scale: 0.5;
-        opacity: 0;
-    }11%{
-        opacity: 0;
-        scale: 0.5;
-    }13%{
-        opacity: 1;
-        scale: 1;
-    }35%{
-        opacity: 1;
-        scale: 1;
-    }37%{
-        opacity: 0;
-        scale: 0.5;
-    }45% {
-        transform: rotateY(180deg);
-    }50% {
-        margin-left: 120%;
-        transform: rotateY(360deg);
-    }62%{
-        opacity: 0;
-        scale: 0.5;
-    }64%{
-        opacity: 1;
-        scale: 1;
-    }86%{
-        scale: 1;
-        opacity: 1;
-    }88%{
-        scale: 0.5;
-        opacity: 0;
-    }95%{
-        transform: rotateY(360deg);
-    }100% {
+
+    100% {
         margin-left: -40%;
         transform: rotateY(180deg);
         opacity: 0;
     }
 }
 
+.portalGif {
+    filter: drop-shadow(4px -2px 2px black);
+}
+
 #invertirPortal {
     transform: rotateY(180deg);
 }
-.contactoTitle{
+
+.contactoTitle {
     font-size: 2rem;
-    text-shadow: 1px 1px 1px #000;
 }
-.contactoInput::placeholder{
-    color: #853FBC;
+
+.contactoInput:focus {
+    outline: none;
+}
+
+.contactoInput::placeholder {
+    color: #a3a3a3;
     font-size: 1rem;
     line-height: 40px;
-    font-weight: 600;
 }
-.contactoDiv{
+
+.contactoDiv {
     animation: aparecer 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;

@@ -6,7 +6,7 @@ const Proyectos = () => {
     const { lang } = useContext(LangContext);
 
     return (
-        <div className="proyectosDiv grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 auto-rows-auto gap-4 p-2 justify-items-center">
+        <div className="proyectosDiv flex flex-col items-center md:flex-row flex-wrap gap-4 pt-10 justify-evenly">
             <Card 
                 parrafo={lang === 'ESP' ? 
                     'Este sitio web está construido en base a un proyecto laboral/estudiantil que busca recuperar, compartir e impulsar el cuidado del medio ambiente.' :
@@ -22,6 +22,15 @@ const Proyectos = () => {
                 urlImg='/previaCOT.webp' 
                 urlNetlify='https://proyecto-escolar-react.netlify.app/' 
                 urlGitHub='https://github.com/marrrkitosdev/proyectoReact' 
+            />
+            <Card 
+                parrafo={lang === 'ESP' ? 
+                    'Trabajo integrador basado en la utilización de datos obtenidos de una API y el uso de LocalStorage, también perteneciente a la diplomatura de desarrollo frontend.' :
+                    'Integrative work based on the use of data obtained from an API and the use of LocalStorage, also part of the frontend development diploma.'} 
+                alinear="md:col-span-2 md:self-center lg:col-span-1" 
+                urlImg='/previaECM.webp' 
+                urlNetlify='https://proyecto-escolar-ecommerce-untref.netlify.app/' 
+                urlGitHub='https://github.com/marrrkitosdev/Ecommerce' 
             />
             <Card 
                 parrafo={lang === 'ESP' ? 
