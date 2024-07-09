@@ -12,10 +12,10 @@ const About = () => {
                 <img src='/allay.gif' alt="allay" rel='preload' className='allayGif w-16 h-16 rounded-full transition-all pb-2 animate-[volar_10s_linear_infinite]' />
                 <p className='fontTitle text-yellow-500 text-2xl text-center transition-all'>Marrrk.dev</p>
                 <div className="aboutMe flex justify-center p-2 rounded-lg">
-                    <img src="/miniyo.webp" rel='preload' alt="perfil" className='w-72 h-56 rounded-lg border border-yellow-500 bg-slate-200 bg-opacity-30' />
+                    <img src="/miniyo.webp" rel='preload' alt="perfil" className='w-72 h-52 rounded-lg border border-yellow-500 bg-slate-200 bg-opacity-30' />
                 </div>
             </div>
-            <div className="flex flex-col items-center pb-2 justify-evenly w-[20rem] gap-2 lg:h-[24rem] overflow-hidden transition-all">
+            <div className="flex flex-col items-center pb-2 justify-evenly w-[22rem] gap-2 lg:h-[24rem] overflow-hidden transition-all">
                 <p className='fontTitle text-yellow-600 text-2xl cursor-pointer lg:hover:scale-105 lg:hover:text-yellow-500 drop-shadow-xl transition-all select-none w-fit bg-neutral-800 bg-opacity-50 p-2 rounded-lg border border-yellow-500 pl-2.5' onClick={toggleLang}>{lang}</p>
                 <p className='w-fit h-fit text-yellow-500 text-xl text-center p-2'>
                     {lang === 'ESP' ?
