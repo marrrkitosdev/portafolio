@@ -17,17 +17,15 @@
     animation-range: entry 0% cover 40%;
 }
 
+.proyectosDiv {
+    
+}
+
 .imgCard {
     mask: linear-gradient(to bottom, #00000080 5%, #00000010);
     scale: 0.9;
     opacity: 0.8;
     transition: 0.3s all ease-out;
-}
-
-.imgCard:hover {
-    mask: none;
-    scale: 1;
-    opacity: 1;
 }
 
 @keyframes aparecer {
@@ -198,4 +196,8 @@
     animation: aparecer 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.footer {
+    mask: linear-gradient(to bottom, #00000080 5%, #000000);
 }

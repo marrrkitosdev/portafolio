@@ -5,8 +5,8 @@ const Contacto = () => {
     const { lang } = useContext(LangContext);
 
     return (
-        <div className='contactoDiv w-full flex justify-center pt-6 text-center'>
-            <div className="animacionAllay bg-neutral-800 bg-opacity-50 rounded-lg p-5 overflow-hidden relative w-[20rem] lg:w-[32rem] transition-all flex flex-col gap-4 border border-yellow-500">
+        <div className='contactoDiv w-full flex justify-center p-12 text-center'>
+            <div className="animacionAllay bg-neutral-800 bg-opacity-50 rounded-lg p-5 overflow-hidden relative w-[20rem] md:w-[30rem] lg:w-[42rem] transition-all flex flex-col gap-4 border border-yellow-500">
                 <h2 className='contactoTitle text-yellow-500 text-2xl'>{lang === 'ESP' ? 'Contacto' : 'Contact'}</h2>
                 <p className='contactoText text-yellow-500 text-lg'>
                     {lang === 'ESP' ? 
