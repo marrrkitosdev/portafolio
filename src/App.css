@@ -18,41 +18,41 @@
 }
 
 @media (min-width: 1024px) {
-    .proyectosDiv {
+    .cardsEfecto {
         transform-style: preserve-3d;
         transform: perspective(2500px);
     }
 
-    .proyectosDiv .card {
+    .card {
         transition: .5s;
         filter: brightness(0.5);
         background-color: #000000d0;
     }
 
-    .proyectosDiv .card:hover {
+    .card:hover {
         filter: brightness(1);
         background: #00000050;
-        transform: translateZ(100px);
+        transform: translateZ(80px);
     }
 
-    .proyectosDiv .card:hover+* {
+    .card:hover+* {
         filter: brightness(0.8);
-        transform: translateZ(50px) rotateY(20deg);
+        transform: translateZ(70px) rotateY(10deg);
     }
 
-    .proyectosDiv .card:hover+*+* {
+    .card:hover+*+* {
         filter: brightness(0.6);
-        transform: translateZ(10px) rotateY(5deg);
+        transform: translateZ(60px) rotateY(2deg);
     }
 
-    .proyectosDiv .card:has(+ *:hover) {
+    .card:has(+ *:hover) {
         filter: brightness(0.8);
-        transform: translateZ(50px) rotateY(-20deg);
+        transform: translateZ(70px) rotateY(-10deg);
     }
 
-    .proyectosDiv .card:has(+ * + *:hover) {
+    .card:has(+ * + *:hover) {
         filter: brightness(0.6);
-        transform: translateZ(10px) rotateY(-5deg);
+        transform: translateZ(60px) rotateY(-2deg);
     }
 }
 

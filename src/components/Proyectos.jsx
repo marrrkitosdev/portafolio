@@ -7,7 +7,7 @@ const Proyectos = () => {
 
     return (
         <div className="proyectosDiv flex flex-col items-center p-10 gap-5">
-            <h2 className='text-yellow-500 text-4xl'>{lang === 'ESP' ? 'Proyectos' : 'Projects'}</h2>
+            <h2 className='text-yellow-500 text-5xl'>{lang === 'ESP' ? 'Proyectos' : 'Projects'}</h2>
             <div className="cardsEfecto flex flex-col gap-4 items-center lg:flex-row lg:justify-center lg:gap-1 flex-wrap">
                 <Card
                     parrafo={lang === 'ESP' ?
