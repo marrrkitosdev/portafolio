@@ -5,7 +5,7 @@ const About = () => {
     const { lang, toggleLang } = useContext(LangContext);
 
     return (
-        <div className='aboutDiv flex flex-col lg:flex-row items-center p-10 gap-6 lg:w-full lg:justify-center'>
+        <div className='aboutDiv flex flex-col lg:flex-row items-center p-10 gap-6 lg:w-full lg:justify-evenly'>
             <div className="animacionAllay bg-neutral-800 bg-opacity-50 border border-yellow-500 rounded-lg p-5 overflow-hidden relative w-[20rem] transition-all">
                 <img src="/portal.webp" rel='preload' alt="" className='portalGif w-16 h-16 absolute right-0' />
                 <img src="/portal.webp" alt="" rel='preload' className='portalGif w-16 h-16 absolute left-0' id='invertirPortal' />

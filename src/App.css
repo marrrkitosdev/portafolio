@@ -25,34 +25,33 @@
 
     .card {
         transition: .5s;
-        filter: brightness(0.5);
-        background-color: #000000d0;
+        background: #00000080;
+        filter: grayscale(1) blur(2px);
     }
 
     .card:hover {
-        filter: brightness(1);
-        background: #00000050;
-        transform: translateZ(80px);
+        transform: translateZ(110px);
+        filter: blur(0);
     }
 
     .card:hover+* {
-        filter: brightness(0.8);
-        transform: translateZ(70px) rotateY(10deg);
+        transform: translateZ(100px) rotateY(10deg);
+        scale: 0.98;
     }
 
     .card:hover+*+* {
-        filter: brightness(0.6);
-        transform: translateZ(60px) rotateY(2deg);
+        transform: translateZ(90px) rotateY(2deg);
+        scale: 0.96;
     }
 
     .card:has(+ *:hover) {
-        filter: brightness(0.8);
-        transform: translateZ(70px) rotateY(-10deg);
+        transform: translateZ(100px) rotateY(-10deg);
+        scale: 0.98;
     }
 
     .card:has(+ * + *:hover) {
-        filter: brightness(0.6);
-        transform: translateZ(60px) rotateY(-2deg);
+        transform: translateZ(90px) rotateY(-2deg);
+        scale: 0.96;
     }
 }
 

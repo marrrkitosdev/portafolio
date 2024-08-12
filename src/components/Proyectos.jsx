@@ -6,9 +6,9 @@ const Proyectos = () => {
     const { lang } = useContext(LangContext);
 
     return (
-        <div className="proyectosDiv flex flex-col items-center p-10 gap-5">
+        <div className="proyectosDiv flex flex-col items-center p-10 gap-10">
             <h2 className='text-yellow-500 text-5xl'>{lang === 'ESP' ? 'Proyectos' : 'Projects'}</h2>
-            <div className="cardsEfecto flex flex-col gap-4 items-center lg:flex-row lg:justify-center lg:gap-1 flex-wrap">
+            <div className="cardsEfecto flex flex-col gap-4 items-center lg:flex-row lg:justify-center lg:gap-5 flex-wrap">
                 <Card
                     parrafo={lang === 'ESP' ?
                         'Este sitio web está construido en base a un proyecto laboral/estudiantil que busca recuperar, compartir e impulsar el cuidado del medio ambiente.' :
